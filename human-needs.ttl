@@ -1,0 +1,165 @@
+@prefix : <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nf: <http://example.org/maxneef/framework/needs/> .
+
+# Manfred Max-Neef's Fundamental human needs
+
+:subsistence a nf:Value-need ; rdfs:label "Subsistence" . 
+:protection a nf:Value-need ; rdfs:label "Protection" . 
+:affection a nf:Value-need ; rdfs:label "Affection" . 
+:understanding a nf:Value-need ; rdfs:label "Understanding" . 
+:participation a nf:Value-need ; rdfs:label "Participation" . 
+:idleness a nf:Value-need ; rdfs:label "Idleness" . 
+:creation a nf:Value-need ; rdfs:label "Creation" . 
+:identity a nf:Value-need ; rdfs:label "Identity" . 
+:freedom a nf:Value-need ; rdfs:label "Freedom" . 
+
+:being a nf:Existential-need ; rdfs:label "Being (qualities)" . 
+:having a nf:Existential-need ; rdfs:label "Having (things)" . 
+:doing a nf:Existential-need ; rdfs:label "Doing (actions)" . 
+:interacting a nf:Existential-need ; rdfs:label "Interacting (settings)" . 
+
+:being-subsistence nf:has-existential :being ;
+   nf:has-axiological :subsistence ;
+   nf:has-examples "physical health, mental health" .
+
+:being-protection nf:has-existential :being ;
+   nf:has-axiological :protection ;
+   nf:has-examples "care, adaptability, autonomy" .
+
+:being-affection nf:has-existential :being ;
+   nf:has-axiological :affection ;
+   nf:has-examples "self-esteem, solidarity, respect, tolerance, generosity, receptiveness, passion, determination, sensuality, sense of humor" .
+
+:being-understanding nf:has-existential :being ;
+   nf:has-axiological :understanding ;
+   nf:has-examples "critical conscience, receptiveness, curiosity, astonishment, discipline, intuition, rationality" .
+
+:being-participation nf:has-existential :being ;
+   nf:has-axiological :participation ;
+   nf:has-examples "adaptability, receptiveness, solidarity, willingness, determination, dedication, respect, passion, sense of humor" .
+
+:being-idleness nf:has-existential :being ;
+   nf:has-axiological :idleness ;
+   nf:has-examples "curiosity, receptiveness, imagination, recklessness, sense of humor, tranquility, sensuality" .
+
+:being-creation nf:has-existential :being ;
+   nf:has-axiological :creation ;
+   nf:has-examples "passion, determination, intuition, imagination, boldness, rationality, autonomy, inventiveness, curiosity" .
+
+:being-identity nf:has-existential :being ;
+   nf:has-axiological :identity ;
+   nf:has-examples "sense of belonging, consistency, differentiation, self-esteem, assertiveness" .
+
+:being-freedom nf:has-existential :being ;
+   nf:has-axiological :freedom ;
+   nf:has-examples "autonomy, self-esteem, determination, passion, assertiveness, open-mindedness, boldness, rebelliousness, tolerance" .
+
+:having-subsistence nf:has-existential :having ;
+   nf:has-axiological :subsistence ;
+   nf:has-examples "food, shelter, work" .
+
+:having-protection nf:has-existential :having ;
+   nf:has-axiological :protection ;
+   nf:has-examples "insurance systems, savings, social security, health systems, work" .
+
+:having-affection nf:has-existential :having ;
+   nf:has-axiological :affection ;
+   nf:has-examples "friendships, family, partnerships, relationships with nature" .
+
+:having-understanding nf:has-existential :having ;
+   nf:has-axiological :understanding ;
+   nf:has-examples "literature, teachers, method, educational policies, communication policies" .
+
+:having-participation nf:has-existential :having ;
+   nf:has-axiological :participation ;
+   nf:has-examples "rights, responsibilities, duties, privileges, work" .
+
+:having-idleness nf:has-existential :having ;
+   nf:has-axiological :idleness ;
+   nf:has-examples "games, spectacles, clubs, parties, peace of mind" .
+
+:having-creation nf:has-existential :having ;
+   nf:has-axiological :creation ;
+   nf:has-examples "abilities, skills, method, work" .
+
+:having-identity nf:has-existential :having ;
+   nf:has-axiological :identity ;
+   nf:has-examples "symbols, language, religion, habits, customs, reference groups, sexuality, values, norms, historical memory, work" .
+
+:having-freedom nf:has-existential :having ;
+   nf:has-axiological :freedom ;
+   nf:has-examples "equal rights" .
+
+:doing-subsistence nf:has-existential :doing ;
+   nf:has-axiological :subsistence ;
+   nf:has-examples "feed, clothe, rest, work" .
+
+:doing-protection nf:has-existential :doing ;
+   nf:has-axiological :protection ;
+   nf:has-examples "cooperate, prevent, plan, take care of, help" .
+
+:doing-affection nf:has-existential :doing ;
+   nf:has-axiological :affection ;
+   nf:has-examples "make love, caress, express emotions, share, take care of, cultivate, appreciate" .
+
+:doing-understanding nf:has-existential :doing ;
+   nf:has-axiological :understanding ;
+   nf:has-examples "investigate, study, experiment, educate, analyze, meditate" .
+
+:doing-participation nf:has-existential :doing ;
+   nf:has-axiological :participation ;
+   nf:has-examples "become affiliated, cooperate, propose, share, dissent, obey, interact, agree on, express opinions" .
+
+:doing-idleness nf:has-existential :doing ;
+   nf:has-axiological :idleness ;
+   nf:has-examples "daydream, brood, dream, recall old times, give way to fantasies, remember, relax, have fun, play" .
+
+:doing-creation nf:has-existential :doing ;
+   nf:has-axiological :creation ;
+   nf:has-examples "work, invent, build, design, compose, interpret" .
+
+:doing-identity nf:has-existential :doing ;
+   nf:has-axiological :identity ;
+   nf:has-examples "commit oneself, integrate oneself, confront, decide on, get to know oneself, recognize oneself, actualize oneself, grow" .
+
+:doing-freedom nf:has-existential :doing ;
+   nf:has-axiological :freedom ;
+   nf:has-examples "dissent, choose, be different from, run risks, develop awareness, commit oneself, disobey" .
+
+:interact-subsistence nf:has-existential :interact ;
+   nf:has-axiological :subsistence ;
+   nf:has-examples "living environment, social setting" .
+
+:interact-protection nf:has-existential :interact ;
+   nf:has-axiological :protection ;
+   nf:has-examples "living space, social environment, dwelling" .
+
+:interact-affection nf:has-existential :interact ;
+   nf:has-axiological :affection ;
+   nf:has-examples "privacy, intimacy, home, space of togetherness" .
+
+:interact-understanding nf:has-existential :interact ;
+   nf:has-axiological :understanding ;
+   nf:has-examples "settings of formative interaction, schools, universities, academies, groups, communities, family" .
+
+:interact-participation nf:has-existential :interact ;
+   nf:has-axiological :participation ;
+   nf:has-examples "settings of participative interaction, parties, associations, churches, communities, neighborhoods, family" .
+
+:interact-idleness nf:has-existential :interact ;
+   nf:has-axiological :idleness ;
+   nf:has-examples "privacy, intimacy, spaces of closeness, free time, surroundings, landscapes" .
+
+:interact-creation nf:has-existential :interact ;
+   nf:has-axiological :creation ;
+   nf:has-examples "productive and feedback settings, workshops, cultural groups, audiences, spaces for expression, temporal freedom" .
+
+:interact-identity nf:has-existential :interact ;
+   nf:has-axiological :identity ;
+   nf:has-examples "social rhythms, everyday settings, settings which one belongs to, maturation stages" .
+
+:interact-freedom nf:has-existential :interact ;
+   nf:has-axiological :freedom ;
+   nf:has-examples "temporal/spatial plasticity, be anywhere" .
