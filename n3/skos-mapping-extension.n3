@@ -1,0 +1,26 @@
+
+
+@prefix dce: <http://purl.org/dc/elements/1.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skos-ex: <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension#>.
+
+
+<http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension>
+	dce:title "SKOS Mapping Extension Schema"@en;
+	dce:creator "Hong Sun"@en;
+	dce:contributor "Jos De Roo"@en;
+	dce:publisher "Agfa Healthcare/Belgium"@en;
+	dce:description "Schema to extend SKOS in defining mapping relation"@en;
+	skos:note "The mapping relations in SKOS, e.g. skos:exactMatch can not be merged with hierarchical relations inside a vocabulary, e.g. skos:broader"@en.
+	
+
+skos-ex:implies
+	a rdf:Property;
+	rdfs:isDefinedBy <http://eulersharp.sourceforge.net/2003/03swap/skos-mapping-extension-rules#>;
+	skos:definition " specifying a mapping relation, the subject concept can be mapped to the object concept"@en;
+	rdfs:domain skos:Concept;
+	rdfs:range skos:Concept.	
+		
+
