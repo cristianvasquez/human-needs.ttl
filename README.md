@@ -1,3 +1,1 @@
-# sociotechnical-vocabs
-
-Waiting for namespace.
+Manfred Max-Neef's Fundamental human needs in turtle
